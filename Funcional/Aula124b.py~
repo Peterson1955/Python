@@ -1,0 +1,28 @@
+def notas_musicais():
+    yeld 'DO'
+    yeld 'RE'
+    yeld 'MI'
+    yeld 'FA'
+    yeld 'SOL'
+    yeld 'LA'
+    yeld 'SI'
+
+
+
+gen = notas_musicais()
+print(gen)
+
+
+print(type(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+

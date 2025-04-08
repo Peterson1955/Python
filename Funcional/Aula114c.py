@@ -1,0 +1,15 @@
+from functools import reduce
+
+pessoas= [
+    {'nome': 'João', 'idade': 28},
+    {'nome': 'Carla', 'idade': 16},
+    {'nome': 'José', 'idade': 50},
+    {'nome': 'Adriana', 'idade': 23},
+    {'nome': 'Ronny', 'idade': 14},
+    ]
+
+idades = map(lambda p: p['idade'], pessoas)
+so_menores = filter(lambda idade: idade < 18, idades)
+soma_menores = reduce(lambda a, b: a + b, so_menores, 0)
+print(f'Idades{soma_menores}')
+

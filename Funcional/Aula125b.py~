@@ -1,0 +1,17 @@
+from sys import getsizeof
+
+gen = (i ** 2 for i in range(10000) if i % 2 == 0)
+lc = [i ** 2 for i in range(10000) if i % 2 == 0]
+
+
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
+print(next(gen))
