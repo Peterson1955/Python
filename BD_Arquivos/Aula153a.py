@@ -1,0 +1,18 @@
+import sqlite3
+con = sqlite3.connect('empresa.db')
+
+cur = con.cursor()
+
+exp_sql = 'INSERT INTO departamentos values (?, ?)'
+
+registros = [ ( 1, 'PRODUÇÃO'),
+              ( 2, 'DESENVOLVIMENTO'),
+              ( 3, 'QUALIDADE'),
+              ( 4, 'MARKETING')]
+
+for registro in registros:
+    cur.execute(exp_sql, registro)
+
+con.commit()
+
+con.close()

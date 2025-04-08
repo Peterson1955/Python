@@ -1,0 +1,21 @@
+class Mamifero:
+    def __init__(self,pelo, mamas, idade):
+        self.pelo = pelo
+        self.mamas = mamas
+        self.idade = idade
+    def cuminar():
+        pass
+
+class Cachorro(Mamifero):
+    def __init__(self, pelo, mamas, idade, rabo):
+        super.__init__(nome, sobrenome, cpf)
+        self.rabo = rabo
+    def latir():
+        pass
+class Gato(Mamifero):
+    def __init__(self, pelo, mamas, idade, rabo):
+        super.__init__(nome, sobrenome, cpf)
+        self.__rabo = rabo
+def miar()
+    pass
+

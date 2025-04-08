@@ -1,0 +1,8 @@
+import pymongo
+
+con = pymongo.MongoClient()
+
+db = con.cadastrodb
+
+db.minhacolecao2.find_one()
+
